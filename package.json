@@ -4,8 +4,11 @@
   "description": "mini quizz en utilisant la POO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./dist/scss/main.scss ./dist/css/style.css "
   },
   "author": "Christophe THEVENET",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

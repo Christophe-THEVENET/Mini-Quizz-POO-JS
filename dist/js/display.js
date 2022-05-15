@@ -1,1 +1,7 @@
-export let text = (document.body.textContent = 'toto');
+
+
+
+//  ============ GROUPER EXPORT IMPORT ================
+
+
+// fin du fichier export {qsdf,sdfsd,qsdqsd,}
