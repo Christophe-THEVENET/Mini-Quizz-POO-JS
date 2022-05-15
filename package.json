@@ -1,0 +1,11 @@
+{
+  "name": "miniquizzpoo",
+  "version": "1.0.0",
+  "description": "mini quizz en utilisant la POO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christophe THEVENET",
+  "license": "ISC"
+}
