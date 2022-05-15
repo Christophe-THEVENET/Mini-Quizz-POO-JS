@@ -21,6 +21,14 @@ INSTALL SASS
 - dans package.json script sass
 sass --watch ..../main.scss ..../style.css
 
+ou 
+
+sass --watch ./dist/sass/scss/:./dist/sass/css/
+
+
+
+
+
 
 architecture
 
@@ -38,4 +46,4 @@ sass/
 
 */
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

@@ -4,7 +4,7 @@
   "description": "mini quizz en utilisant la POO",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./dist/scss/main.scss ./dist/css/style.css "
+    "sass": "sass --watch ./dist/sass/scss/:./dist/sass/css/"
   },
   "author": "Christophe THEVENET",
   "license": "ISC",
