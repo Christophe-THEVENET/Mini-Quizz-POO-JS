@@ -13,9 +13,25 @@
     <main>
 
         <section class="quizz">
-            <h1 class="quizz__title">Bienvenu sur le Quizz farfelu</h1>
-            <p class="quizz_description">Il sera composé de 3 questions....</p>
-            <button class="quizz__btn">OK</button>
+
+            <div class="welcomeScreen">
+                <h1 class="quizz__maintitle">Bienvenu sur le Quizz farfelu</h1>
+                <p class="quizz__description">Il sera composé de
+                    <span class="nbQuestions"></span>
+                    questions....
+                </p>
+                <button class="quizz__btn">OK</button>
+            </div>
+
+            <div class="resultScreen">
+                <h2 class="quizz__subtitle">Résultat!</h2>
+                <p class="quizz_description">
+                    <span id="nbGoodAnswer"></span>
+                    réponses sur <span class="nbQuestions"></span>
+                    correctes
+                </p>
+            </div>
+
         </section>
 
 

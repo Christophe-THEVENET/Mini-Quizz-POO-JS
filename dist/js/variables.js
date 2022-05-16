@@ -1,9 +1,7 @@
 import { Quizz, Question } from './functions.js';
 
-
 // ===== nouveau quizz ==========
 let quizzFarfelu = new Quizz();
-
 
 // ========= nouvelles questions =============
 
@@ -21,6 +19,12 @@ let question3 = new Question(
     '2'
 );
 
-export { quizzFarfelu, question1, question2, question3 };
+
+// nb de bonnes questions
+let elNbGoodAnswer = document.querySelector('#nbGoodAnswer');
 
 
+let elNbQuestions = document.querySelectorAll('.nbQuestions')
+
+
+export { quizzFarfelu, question1, question2, question3, elNbGoodAnswer,elNbQuestions };

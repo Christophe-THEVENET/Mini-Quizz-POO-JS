@@ -12,8 +12,14 @@
 
 // Objet.méthodeImportéé()
 
-import { quizzFarfelu, question1, question2, question3 } from './variables.js';
-
+import {
+    quizzFarfelu,
+    question1,
+    question2,
+    question3,
+    elNbGoodAnswer,
+    elNbQuestions,
+} from './variables.js';
 
 // ajout des qestions au quizz
 quizzFarfelu.addQuestion(question1);
@@ -23,3 +29,12 @@ quizzFarfelu.addQuestion(question3);
 // lancement du Quizz
 quizzFarfelu.launch();
 
+console.log(quizzFarfelu);
+
+elNbGoodAnswer.textContent = quizzFarfelu.nbGoodAnswer;
+
+/* for (nbQuestion of elNbQuestions) */
+
+for (let elNbQuestion of elNbQuestions) {
+    elNbQuestion.textContent = quizzFarfelu.questions.length;
+}

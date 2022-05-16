@@ -3,17 +3,26 @@
 .quizz {
     background-color: rgb(237, 203, 195);
     color: rgb(85, 8, 75);
-    border: 4px solid rgb(223, 39, 146);
+    border: 4px solid #df2792;
     border-radius: 6px;
     padding: 3rem 2rem;
     flex-direction: column;
     font-size: 3.6vw;
     text-align: center;
-    font-family: 'Skranji', cursive;
     letter-spacing: 0.1rem;
+    font-family: 'Balsamiq Sans', cursive;
 
 }
 
 
 
 
+
+.quizz__btn {
+    background-color: #df27926d;
+    padding: 0.75rem 3rem;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
