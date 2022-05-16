@@ -1,8 +1,10 @@
 function Quizz() {
-    this.question = [];
+    //tableau des questions
+    this.questions = [];
 
+    // ajouter une question au Quizz
     this.addQuestion = function (question) {
-        this.question.push(question);
+        this.questions.push(question);
     };
 }
 
@@ -11,6 +13,7 @@ function Question(title, answers, goodAnswer) {
     this.answers = answers;
     this.goodAnswer = goodAnswer;
 
+    // récupère les données de la question
     this.getBodyQuestion = function () {
         let bodyQuestion = this.title;
         for (let index = 0; index < this.answers.length; index++) {
@@ -20,14 +23,29 @@ function Question(title, answers, goodAnswer) {
         return bodyQuestion;
     };
 
+    // vérifie la bonne réponse
     this.isGoodAnswer = function (answerUser) {
         if (answerUser === this.goodAnswer) {
+            console.log('gagné');
             return true;
         }
+        console.log('perdu');
         return false;
     };
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export { Quizz, Question };
-
-
