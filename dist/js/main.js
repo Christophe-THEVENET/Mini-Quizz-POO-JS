@@ -14,12 +14,12 @@
 
 import { quizzFarfelu, question1, question2, question3 } from './variables.js';
 
-import { Quizz, Question } from './functions.js';
 
+// ajout des qestions au quizz
 quizzFarfelu.addQuestion(question1);
 quizzFarfelu.addQuestion(question2);
 quizzFarfelu.addQuestion(question3);
 
+// lancement du Quizz
+quizzFarfelu.launch();
 
-
-quizzFarfelu.launch()

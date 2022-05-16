@@ -1,4 +1,19 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+
+  @include reset-list; */
 *,
 ::before,
 ::after {
@@ -7,8 +22,27 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: rgb(23, 26, 39);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.quizz {
+  background-color: rgb(237, 203, 195);
+  color: rgb(85, 8, 75);
+  border: 4px solid rgb(223, 39, 146);
+  border-radius: 6px;
+  padding: 3rem 2rem;
+  flex-direction: column;
+  font-size: 3.6vw;
+  text-align: center;
+  font-family: "Skranji", cursive;
+  letter-spacing: 0.1rem;
 }
 
 /*
@@ -20,26 +54,19 @@ INSTALL SASS
 - npm install sass -g
 - dans package.json script sass
 sass --watch ..../main.scss ..../style.css
-
 ou 
-
 sass --watch ./dist/sass/scss/:./dist/sass/css/
-
-
-
-
-
 
 architecture
 
 nommer les dossiers/fichiers importés avec '_' devant
-
+pour ne pas les compiler
 
 sass/
 |- abstract/
 |   |- _variables.scss
 |
-||
+|
 |
 |
 |-  main.scss

@@ -5,7 +5,7 @@ import { Quizz, Question } from './functions.js';
 let quizzFarfelu = new Quizz();
 
 
-// ========= ajout questions au quizzFarfelu =============
+// ========= nouvelles questions =============
 
 let question1 = new Question(
     "Quelle est la couleur du cheval blanc d'Henri 4 ?",
@@ -22,4 +22,5 @@ let question3 = new Question(
 );
 
 export { quizzFarfelu, question1, question2, question3 };
+
 

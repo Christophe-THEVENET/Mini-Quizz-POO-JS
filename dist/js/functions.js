@@ -24,11 +24,11 @@ function Quizz() {
         this.showResult();
     };
 
-    this.showResult =  () => {
+    this.showResult = () => {
         let msg =
             'Résultats:\n' + this.nbGoodAnswer + ' sur' + this.questions.length + ' correctes';
-        console.log(msg)
-        console.log(this.nbGoodAnswer)
+        console.log(msg);
+        console.log(this.nbGoodAnswer);
     };
 }
 
@@ -40,7 +40,7 @@ function Question(title, answers, goodAnswer) {
     this.goodAnswer = goodAnswer;
 
     // récupère les données de la question
-    this.getBodyQuestion = function () {
+    this.getBodyQuestion = () => {
         let bodyQuestion = this.title;
         for (let index = 0; index < this.answers.length; index++) {
             bodyQuestion += '   ' + (index + 1) + ' .. ' + this.answers[index];
@@ -53,7 +53,6 @@ function Question(title, answers, goodAnswer) {
     this.isGoodAnswer = (answerUser) => {
         if (answerUser == this.goodAnswer) {
             return true;
-
         }
         return false;
     };
