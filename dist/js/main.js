@@ -16,15 +16,10 @@ import { quizzFarfelu, question1, question2, question3 } from './variables.js';
 
 import { Quizz, Question } from './functions.js';
 
-
-
-
 quizzFarfelu.addQuestion(question1);
 quizzFarfelu.addQuestion(question2);
 quizzFarfelu.addQuestion(question3);
 
-console.log(question1.getBodyQuestion());
-console.log(question2.getBodyQuestion());
-console.log(question3.getBodyQuestion());
 
 
+quizzFarfelu.launch()

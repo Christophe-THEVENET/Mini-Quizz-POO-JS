@@ -22,3 +22,4 @@ let question3 = new Question(
 );
 
 export { quizzFarfelu, question1, question2, question3 };
+
