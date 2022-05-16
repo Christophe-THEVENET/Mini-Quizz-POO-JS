@@ -1,0 +1,38 @@
+@import 'base';
+@import 'layout';
+@import 'component';
+
+/*
+
+INSTALL SASS
+
+- installer sur le pc node.js
+- ajouter au PATH
+- npm install sass -g
+- dans package.json script sass
+sass --watch ..../main.scss ..../style.css
+
+ou 
+
+sass --watch ./dist/sass/scss/:./dist/sass/css/
+
+
+
+
+
+
+architecture
+
+nommer les dossiers/fichiers importés avec '_' devant
+pour ne pas les compiler
+
+sass/
+|- abstract/
+|   |- _variables.scss
+|
+|
+|
+|
+|-  main.scss
+
+*/

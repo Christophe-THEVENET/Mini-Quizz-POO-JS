@@ -1,0 +1,49 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(23, 26, 39);
+}
+
+/*
+
+INSTALL SASS
+
+- installer sur le pc node.js
+- ajouter au PATH
+- npm install sass -g
+- dans package.json script sass
+sass --watch ..../main.scss ..../style.css
+
+ou 
+
+sass --watch ./dist/sass/scss/:./dist/sass/css/
+
+
+
+
+
+
+architecture
+
+nommer les dossiers/fichiers importés avec '_' devant
+
+
+sass/
+|- abstract/
+|   |- _variables.scss
+|
+||
+|
+|
+|-  main.scss
+
+*/
+
+/*# sourceMappingURL=main.css.map */
