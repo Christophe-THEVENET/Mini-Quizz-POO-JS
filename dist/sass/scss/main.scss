@@ -11,15 +11,8 @@ INSTALL SASS
 - npm install sass -g
 - dans package.json script sass
 sass --watch ..../main.scss ..../style.css
-
 ou 
-
 sass --watch ./dist/sass/scss/:./dist/sass/css/
-
-
-
-
-
 
 architecture
 
@@ -36,3 +29,4 @@ sass/
 |-  main.scss
 
 */
+
