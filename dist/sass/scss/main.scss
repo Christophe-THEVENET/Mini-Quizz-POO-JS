@@ -1,6 +1,6 @@
-@import './base';
-@import './layout';
-@import './component';
+@import 'base';
+@import 'layout';
+@import 'component';
 
 /*
 
@@ -24,13 +24,13 @@ sass --watch ./dist/sass/scss/:./dist/sass/css/
 architecture
 
 nommer les dossiers/fichiers importés avec '_' devant
-
+pour ne pas les compiler
 
 sass/
 |- abstract/
 |   |- _variables.scss
 |
-||
+|
 |
 |
 |-  main.scss
