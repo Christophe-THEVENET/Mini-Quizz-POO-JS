@@ -33,14 +33,18 @@ body {
 }
 
 main {
-  width: 100%;
+  width: 90%;
 }
 
 .resultScreen {
   display: none;
 }
 
-.questionScreen {
+.visible {
+  display: block;
+}
+
+.hidden {
   display: none;
 }
 

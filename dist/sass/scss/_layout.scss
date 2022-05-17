@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 90%;
 }
 
 .welcomeScreen {
@@ -30,5 +30,13 @@ main {
 }
 
 .questionScreen {
-    display: none;
 }
+ 
+
+ .visible {
+     display: block;
+ }
+
+ .hidden {
+     display: none;
+ }

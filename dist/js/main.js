@@ -30,14 +30,14 @@ quizzFarfelu.addQuestion(question2);
 quizzFarfelu.addQuestion(question3);
 
 // lancement du Quizz
-quizzFarfelu.launch();
+/* quizzFarfelu.launch(); */
 
 console.log(quizzFarfelu);
 
 // el nb bonnes question
-elNbGoodAnswer.textContent = quizzFarfelu.nbGoodAnswer;
+/* elNbGoodAnswer.textContent = quizzFarfelu.nbGoodAnswer; */
 
 // els nb questions
 // !!!! pour boucler en forEach, il faut recup les elements avec querySelectorAll
-elNbQuestions.forEach((elNbQuestion) => (elNbQuestion.textContent = quizzFarfelu.questions.length));
+/* elNbQuestions.forEach((elNbQuestion) => (elNbQuestion.textContent = quizzFarfelu.questions.length)); */
 
