@@ -7,15 +7,21 @@
     border-radius: 6px;
     padding: 3rem 2rem;
     flex-direction: column;
-    font-size: 3.6vw;
+    font-size: 3.2vw;
     text-align: center;
     letter-spacing: 0.1rem;
     font-family: 'Balsamiq Sans', cursive;
+    &__title {
+        margin-bottom: 2rem;
+    }
+    &__subtitle {
+        margin-bottom: 2rem;
+    }
+
     &__btn {
         background-color: #df27926d;
         padding: 0.75rem 3rem;
         border: none;
-        margin-top: 2rem;
         border-radius: 6px;
         cursor: pointer;
     }
@@ -38,15 +44,12 @@
     }
 }
 
+
+
 .answer--correct {
     background-color: rgb(114, 227, 129);
 }
 
 .answer--wrong {
     background-color: rgb(240, 75, 86);
-}
-
-
-.box {
-
 }

@@ -22,21 +22,11 @@ main {
     width: 90%;
 }
 
-.welcomeScreen {
+
+.visible {
+    display: block;
 }
 
-.resultScreen {
+.hidden {
     display: none;
 }
-
-.questionScreen {
-}
- 
-
- .visible {
-     display: block;
- }
-
- .hidden {
-     display: none;
- }
