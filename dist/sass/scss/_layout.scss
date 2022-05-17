@@ -11,14 +11,16 @@ html {
     font-size: 62.5%;
 }
 
-
 body {
     background-color: rgb(23, 26, 39);
     min-height: 100vh;
     overflow: hidden;
-    @extend %flexCenter
+    @extend %flexCenter;
 }
 
+.welcomeScreen {
+}
 
-
-
+.resultScreen {
+   /*  display: none; */
+}

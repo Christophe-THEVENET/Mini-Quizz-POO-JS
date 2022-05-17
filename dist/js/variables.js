@@ -23,8 +23,10 @@ let question3 = new Question(
 // nb de bonnes questions
 let elNbGoodAnswer = document.querySelector('#nbGoodAnswer');
 
-
+// nb de questions
 let elNbQuestions = document.querySelectorAll('.nbQuestions')
 
 
 export { quizzFarfelu, question1, question2, question3, elNbGoodAnswer,elNbQuestions };
+
+

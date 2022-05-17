@@ -1,4 +1,4 @@
-//========== fonction pour créer un quizz ==============
+//========== CREER UN QUIZZ ==============
 
 function Quizz() {
     //tableau des questions
@@ -32,21 +32,21 @@ function Quizz() {
     };
 }
 
-// ========== fonction pour créer une question ==============
+// ========== CREER UNE QUESTION ==============
 
 function Question(title, answers, goodAnswer) {
     this.title = title;
     this.answers = answers;
     this.goodAnswer = goodAnswer;
-
     // récupère les données de la question
-    this.getBodyQuestion = () => {
-        let bodyQuestion = this.title;
-        for (let index = 0; index < this.answers.length; index++) {
-            bodyQuestion += '   ' + (index + 1) + ' .. ' + this.answers[index];
+    this.getDataQuestion = () => {
+        let dataQuestion = this.title;
+        // boucle les réponses possible
+        for (let i = 0; i < this.answers.length; i++) {
+            dataQuestion += '   \n' + (i + 1) + ' ' + this.answers[i];
         }
 
-        return bodyQuestion;
+        return dataQuestion;
     };
 
     // vérifie la bonne réponse
@@ -57,8 +57,5 @@ function Question(title, answers, goodAnswer) {
         return false;
     };
 }
-
-
-
 
 export { Quizz, Question };

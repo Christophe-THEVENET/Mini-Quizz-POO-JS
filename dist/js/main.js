@@ -27,14 +27,17 @@ quizzFarfelu.addQuestion(question2);
 quizzFarfelu.addQuestion(question3);
 
 // lancement du Quizz
-quizzFarfelu.launch();
+/* quizzFarfelu.launch(); */
 
 console.log(quizzFarfelu);
 
+// el nb bonnes question
 elNbGoodAnswer.textContent = quizzFarfelu.nbGoodAnswer;
 
-/* for (nbQuestion of elNbQuestions) */
 
+// els nb questions
 for (let elNbQuestion of elNbQuestions) {
     elNbQuestion.textContent = quizzFarfelu.questions.length;
 }
+
+console.log(question1.getDataQuestion());
