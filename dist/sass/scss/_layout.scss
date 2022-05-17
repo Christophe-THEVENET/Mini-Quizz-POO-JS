@@ -22,6 +22,9 @@ main {
     width: 90%;
 }
 
+.resultScreen {
+    display: none;
+} 
 
 .visible {
     display: block;
@@ -30,3 +33,4 @@ main {
 .hidden {
     display: none;
 }
+

@@ -1,16 +1,21 @@
 //========== CREER UN QUIZZ ==============
-import { elQuestionScreen, elWelcomeScreen, elResultScreen } from './variables.js';
+import { elQuestionScreen, elWelcomeScreen, elResultScreen, quizzFarfelu } from './variables.js';
 
 function Quizz() {
     //tableau des questions
     this.questions = [];
     this.nbGoodAnswer = 0;
-
+    this.indexCurrentQuestion = 0;
     // ajouter une question au Quizz
     this.addQuestion = (question) => this.questions.push(question);
 
     this.showCurrentQuestion = () => {
-        this.questions[1].getElement();
+        if (this.indexCurrentQuestion < this.questions.length) {
+            this.questions[this.indexCurrentQuestion].getElement();
+        } else {
+            elQuestionScreen.classList.add('hidden');
+            elResultScreen.classList.add('visible');
+        }
     };
 }
 
@@ -57,14 +62,17 @@ function Question(title, answers, goodAnswer) {
 
         if (answerCliqued.id == this.goodAnswer) {
             answerCliqued.classList.add('answer--correct');
-            console.log('true');
-            return true;
+            quizzFarfelu.nbGoodAnswer++;
+        } else {
+            answerCliqued.classList.add('answer--wrong');
         }
-        console.log('false');
-        return false;
+        // vider boite question
+        setTimeout(() => {
+            elQuestionScreen.textContent = '';
+            quizzFarfelu.indexCurrentQuestion++;
+            quizzFarfelu.showCurrentQuestion();
+        }, 1000);
     };
 }
-
-
 
 export { Quizz, Question };

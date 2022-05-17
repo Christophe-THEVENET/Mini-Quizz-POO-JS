@@ -16,6 +16,8 @@ quizzFarfelu.addQuestion(question1);
 quizzFarfelu.addQuestion(question2);
 quizzFarfelu.addQuestion(question3);
 
+
+
 // fonction du click bouton accueil
 const seeFirstQuestion = () => {
     elWelcomeScreen.classList.add('hidden');
