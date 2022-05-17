@@ -21,23 +21,23 @@ import {
     elNbQuestions,
 } from './variables.js';
 
+
+
+
 // ajout des qestions au quizz
 quizzFarfelu.addQuestion(question1);
 quizzFarfelu.addQuestion(question2);
 quizzFarfelu.addQuestion(question3);
 
 // lancement du Quizz
-/* quizzFarfelu.launch(); */
+quizzFarfelu.launch();
 
 console.log(quizzFarfelu);
 
 // el nb bonnes question
 elNbGoodAnswer.textContent = quizzFarfelu.nbGoodAnswer;
 
-
 // els nb questions
-for (let elNbQuestion of elNbQuestions) {
-    elNbQuestion.textContent = quizzFarfelu.questions.length;
-}
+// !!!! pour boucler en forEach, il faut recup les elements avec querySelectorAll
+elNbQuestions.forEach((elNbQuestion) => (elNbQuestion.textContent = quizzFarfelu.questions.length));
 
-console.log(question1.getDataQuestion());

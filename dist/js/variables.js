@@ -19,14 +19,19 @@ let question3 = new Question(
     '2'
 );
 
-
 // nb de bonnes questions
 let elNbGoodAnswer = document.querySelector('#nbGoodAnswer');
 
 // nb de questions
-let elNbQuestions = document.querySelectorAll('.nbQuestions')
+let elNbQuestions = document.querySelectorAll('.nbQuestions');
 
+export { quizzFarfelu, question1, question2, question3, elNbGoodAnswer, elNbQuestions, welcomeBtn,elWelcomeScreen,elQuestionScreen,elResultScreen };
 
-export { quizzFarfelu, question1, question2, question3, elNbGoodAnswer,elNbQuestions };
-
-
+// btn acceuil
+let welcomeBtn = document.getElementById('welcomeBtn');
+// bloc acceuil
+let elWelcomeScreen = document.querySelector('#welcomeScreen');
+// bloc question 
+let elQuestionScreen = document.querySelector('#questionScreen');
+// bloc resultat
+let elResultScreen = document.querySelector('#resultScreen');

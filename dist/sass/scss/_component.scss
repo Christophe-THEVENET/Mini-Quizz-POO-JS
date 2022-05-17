@@ -11,14 +11,42 @@
     text-align: center;
     letter-spacing: 0.1rem;
     font-family: 'Balsamiq Sans', cursive;
-
+    &__btn {
+        background-color: #df27926d;
+        padding: 0.75rem 3rem;
+        border: none;
+        margin-top: 2rem;
+        border-radius: 6px;
+        cursor: pointer;
+    }
 }
 
-.quizz__btn {
-    background-color: #df27926d;
-    padding: 0.75rem 3rem;
-    border: none;
-    margin-top: 2rem;
-    border-radius: 6px;
-    cursor: pointer;
+.questionScreen {
+    &__answers {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__answer {
+        border: 2px solid #df2792;
+        font-weight: bold;
+        background-color: #eb9cca;
+        text-align: left;
+        padding: 0.5rem 1rem;
+        margin: 1rem auto;
+        cursor: pointer;
+    }
+}
+
+.answer--correct {
+    background-color: rgb(114, 227, 129);
+}
+
+.answer--wrong {
+    background-color: rgb(240, 75, 86);
+}
+
+
+.box {
+
 }

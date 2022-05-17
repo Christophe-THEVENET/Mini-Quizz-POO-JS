@@ -18,9 +18,17 @@ body {
     @extend %flexCenter;
 }
 
+main {
+    width: 100%;
+}
+
 .welcomeScreen {
 }
 
 .resultScreen {
-   /*  display: none; */
+    display: none;
+}
+
+.questionScreen {
+    display: none;
 }

@@ -15,10 +15,8 @@ function Quizz() {
             // on récup la réponse de l'utilisateur
             let answerUser = ''; // a récupérer ds le DOM
             if (question.isGoodAnswer(answerUser)) {
-                console.log('gagné');
                 this.nbGoodAnswer++;
             } else {
-                console.log('perdu');
             }
         });
         this.showResult();
@@ -27,8 +25,6 @@ function Quizz() {
     this.showResult = () => {
         let msg =
             'Résultats:\n' + this.nbGoodAnswer + ' sur' + this.questions.length + ' correctes';
-        console.log(msg);
-        console.log(this.nbGoodAnswer);
     };
 }
 
