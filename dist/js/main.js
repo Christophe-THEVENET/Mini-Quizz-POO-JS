@@ -21,7 +21,6 @@ quizzFarfelu.addQuestion(question3);
 // fonction du click bouton accueil
 const seeFirstQuestion = () => {
     elWelcomeScreen.classList.add('hidden');
-
     quizzFarfelu.showCurrentQuestion();
 };
 
@@ -31,8 +30,9 @@ welcomeBtn.addEventListener('click', seeFirstQuestion);
 //nb de questions (plusieurs)
 for (let elNbQuestion of elNbQuestions) {
     elNbQuestion.textContent = quizzFarfelu.questions.length;
-}
+} 
 
+elNbQuestions
 // !!!!!!!!!!!!!! pour déclarer des imports / export, il faut typer la balise script du html type="module"
 
 //  ============ GROUPER EXPORT IMPORT ================

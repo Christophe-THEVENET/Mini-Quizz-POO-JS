@@ -1,6 +1,6 @@
 @import 'base';
-@import 'layout';
 @import 'component';
+@import 'layout';
 
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Rammetto+One&family=Skranji&display=swap');
 /*
@@ -19,6 +19,7 @@ architecture
 
 nommer les dossiers/fichiers importés avec '_' devant
 pour ne pas les compiler
+
 
 sass/
 |- abstract/

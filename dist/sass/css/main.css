@@ -14,40 +14,6 @@ body {
 
 
   @include reset-list; */
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background-color: rgb(23, 26, 39);
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-main {
-  width: 90%;
-}
-
-.resultScreen {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-.hidden {
-  display: none;
-}
-
 .quizz {
   background-color: rgb(237, 203, 195);
   color: rgb(85, 8, 75);
@@ -94,6 +60,40 @@ main {
 
 .answer--wrong {
   background-color: rgb(240, 75, 86);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(23, 26, 39);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 90%;
+}
+
+.resultScreen {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 /*

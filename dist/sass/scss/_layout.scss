@@ -2,35 +2,35 @@
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    background-color: rgb(23, 26, 39);
-    min-height: 100vh;
-    overflow: hidden;
-    @extend %flexCenter;
+  background-color: rgb(23, 26, 39);
+  min-height: 100vh;
+  overflow: hidden;
+  @extend %flexCenter;
 }
 
 main {
-    width: 90%;
+  width: 90%;
 }
 
 .resultScreen {
-    display: none;
-} 
+  display: none;
+}
 
 .visible {
-    display: block;
+  display: block;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
